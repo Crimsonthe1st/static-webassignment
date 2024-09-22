@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<!--CREDITS:
+    form: 
+        skeleton from: https://getbootstrap.com/docs/4.3/components/forms/
+-->
+
+<style>
+  input[type=search] {
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  label {
+    font-family: Papyrus, fantasy;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    border: 10px black;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+</style>
+
+<head>
+  <link rel="stylesheet" href="bargainbooks.css">
+  <center><a href="bargain books mainpage.html"><img src="https://i.ibb.co/ZYqMCL0/logo.png" alt="Bargain Books Logo"
+        width="200" height="200">
+      <a href="bargain books mainpage.html"></a><img src="https://i.ibb.co/tJc58Sd/banner-logo.png"
+        alt="Bargin Books Banner" width="800" height="200">
+</head>
+
+<body>
+  <br>
+  <img src="https://wallpapers.com/images/hd/colorful-book-spine-collection-5jszte7ujj33pwva.png" alt="Book spines"
+    width="500" height="200">
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <form>
+      <div class="form-group">
+        <label for="bookSearch">Book title or ISBN</label>
+        <input type="search" class="form-control" id="bookSearchEx" placeholder="The Fellowship of the Ring">
+      </div>
+      <div class="form-group">
+        <label for="bookCondition">Condition of book</label>
+        <select class="form-control" id="bookConditionEx">
+          <option>Like New</option>
+          <option>Lightly Read</option>
+          <option>Moderately Used</option>
+          <option>Well Loved</option>
+        </select>
+      </div>
+    </form>
+    <br>
+
+    <p>Estimated Worth: </p>
+    <div class="box">
+      <p>$$$</p>
+    </div>
+    <br>
+
+    <a href="buy page.html"><button class="button-buy" role="button" width=50%>Meant to buy a book?</button>
+    </a>
+
+    <br>
+    <br>
+    <h2>Estimate Worth Calculation:</h2>
+
+    <h3>Condition of book:</h3>
+    <p>
+      <br>
+      Like New: 70% of the market price.
+      <br>
+      <br>
+      Lightly Read: 60% of the market price.
+      <br>
+      <br>
+      Moderately Used: 40% of market price.
+      <br>
+      <br>
+      Well Loved: 30% of market price.
+    </p>
+
+
+
+</body>
+
+</html>
